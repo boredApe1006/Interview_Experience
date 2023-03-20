@@ -35,9 +35,9 @@ Then 15 min googlyness round : He asked on my ongoing intern project. Whether yo
 This was the best round. The interviewer was very chill and we matched vibe from the start.
 You have a N * N chessboard. Every cell of a chessboard has a integer written on it. You have to find the length of the longest path. The path is defined as : If you are standing at cell (i,j) you can move to a cell(x,y) if and only if either (x == i) or (y == j) i.e. it should share a row or a column with the previous cell (like rook in chess) and the new cell value must be greater than the previous value. You can start at any cell and can end at any cell.
 Eg
-8 6 10
-9 2 3
-1 4 11
+##### 8 6 10
+##### 9 2 3
+##### 1 4 11
 
 The ans will be 6 (1->4->6->8->10->11)
 Solution. Its basically dp on directed acyclic graph. If we can move from cell a to b then we can not move from b to a due to the strictly increasing condition. So we can model it into a graph problem and we have to find the longest path in DAG.
