@@ -1,4 +1,4 @@
-# Google_Interview_Experience
+# Interview_Experience
 
 ## There were 3 rounds in total.
 Had an online assessment which has 2 questions to be solved in 60 mins. Solved both. 40 students (19 boys + 21 girls)from my college were selected for interviews.
@@ -46,8 +46,8 @@ The interviewer then said I will not waste your time by asking to print the long
 Then he told that a more optimized solution exists for this problem. Let's try to code that together.
 Took me 5 more mins to come up with the N^2 log(N) solution. Make a vector of <cell value, cell row no, cell col no> and sort it in decreasing order of cell value. Now if you are on ith value on this the decreasing order than all values greater than the ith value are already visited. So i maintained 2 vectors rowVector(n) and colVector(n). rowVector[i] will tell the length of the longest path starting from the ith row. Similarly colVector[i] will tell the length of the longest path starting from the ith col. So for the ith value if row and col no is (r,c). Its ans will the 1 + max(rowVector[r],colVector[c]). Now we will update rowVector[r] = colVector[c] = ans. We have to handle the case for equal values by first computing ans for all equal values and then updating their ans for all same values simultaneously. Coded it properly. Time Complexity 0(N^2 log(N)) and space complexity O(N). This round went very good. Had a good feeling after this round.
 
-Got the results after 2 days. I was finally selected at Google India SWE.
+Got the results after 2 days. I was finally selected as SWE.
 
-Prep : Started with DSA course from coding ninjas in my first sem. Then did their Competitive Programming Course and participated in codechef long challenges in first year. Didn't saw much improvement in my skills. Started practicing on codeforces and gave contests on codeforces and atcoder. Reached 1800 on codeforces by the end of 2nd year. From third year I practiced more on leetcode and used to give contest on codeforces to keep it touch with CP skills. Learnt a lot of algos on leetcode. Reached Candidate Master on codeforces in March 2022 finally. Then used a leetcode premium acount from my friend and speed runned through all google asked questions in last 6 months.
+Prep : Started with DSA course from coding ninjas in my first sem. Then did their Competitive Programming Course and participated in codechef long challenges in first year. Didn't saw much improvement in my skills. Started practicing on codeforces and gave contests on codeforces and atcoder. Reached 1800 on codeforces by the end of 2nd year. From third year I practiced more on leetcode and used to give contest on codeforces to keep it touch with CP skills. Learnt a lot of algos on leetcode. Reached Candidate Master on codeforces in March 2022 finally. Then used a leetcode premium acount from my friend and speed runned through all the asked questions in last 6 months.
 
 Thank you !!
