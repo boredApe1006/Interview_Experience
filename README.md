@@ -1,8 +1,8 @@
 # Google_Interview_Experience
 
-##There were 3 rounds in total.
+## There were 3 rounds in total.
 Had an online assessment which has 2 questions to be solved in 60 mins. Solved both. 40 students (19 boys + 21 girls)from my college were selected for interviews.
-#Round 1 (45 mins DSA + 15 mins googlyness)
+# Round 1 (45 mins DSA + 15 mins googlyness)
 The interviewer started with we have a connected graph with some infected nodes. 1) Given a source node and a destination find if a path exists from the source node to destination without visiting any infected nodes. 2) If yes find the length of the shortest path from source to destination. She just wanted to know the approach. I told the BFS approach.
 Then the follow up was now every infected node has a same virality factor. Definition of Virality factor is that let's suppose virality factor is 2 so all nodes which are at distance 2 or less from any of the infected nodes should also not be visited. Now again same questions. I told the multisource BFS approach and coded it. Find all set of nodes which can not be visited using multisource bfs and then again run bfs from source to destination. Time compexity O(V + E) due to multisource bfs.
 Similar logic : https://leetcode.com/problems/rotting-oranges/
@@ -16,7 +16,7 @@ Next 15 min were behavioural questions like the time when you were stuck on a pr
 
 
 
-#Round 2: (45 mins DSA + 15 mins googlyness)
+# Round 2: (45 mins DSA + 15 mins googlyness)
 You have an array of with n building. ith building has arr[i] number of floors in it. You can reduce as many number of floors from any building. The cost of reducing 1 floor is 1. If you remove all floors from the ith building so the final height of that building will be 0, which is considered as free space and will not be considered a building now(read test case 1 for why this condition is given). You have to make height of all buildings equal in final array with minimum cost.
 Test case one [2,4,5] : min cost => 3. Remove 2 from the 0th index and 1 from the 2nd index. Final array => [0,4,4] with cost 2.
 Clarification on test case : One quick solution which can come to your mind is to make height of every building equal to minimum height but this will give WA in test case one. as cost of [2,2,2] from [2,4,5] is 0 + 2 + 3 = 5 is more than cost of [0,4,4].
@@ -31,7 +31,7 @@ Then 15 min googlyness round : He asked on my ongoing intern project. Whether yo
 
 
 
-#Round 3 : 45 mins DSA
+# Round 3 : 45 mins DSA
 This was the best round. The interviewer was very chill and we matched vibe from the start.
 You have a N * N chessboard. Every cell of a chessboard has a integer written on it. You have to find the length of the longest path. The path is defined as : If you are standing at cell (i,j) you can move to a cell(x,y) if and only if either (x == i) or (y == j) i.e. it should share a row or a column with the previous cell (like rook in chess) and the new cell value must be greater than the previous value. You can start at any cell and can end at any cell.
 Eg
